@@ -3,11 +3,12 @@ import './App.css';
 import Navigation from './Navigation'
 import Slide from './Slide'
 import Container from './Container'
+import Selector from './Selector'
 import { Database } from './Database'
 
 const App = () => {
 
-  // const [phone1, setPhone1] = useState('AIP11PM')
+  const [phone1, setPhone1] = useState(['AIP11PM', 'AIP11PM', 'AIP11PM'])
   // const [phone2, setPhone2] = useState(null)
   // const [phone3, setPhone3] = useState(null)
 
@@ -18,14 +19,27 @@ const App = () => {
     console.log(realSize)
   };
 
-  const hello = Database[0].id
+  const phoneChange = (n) => (value) => {
+    for (var i=0; i < Database.length; i++) {
+      if (Database[i].id = value) {
+        setPhone(oldArray => {
+          oldArray[n] = value
+        })
+      }
+    }
+  }
+
+  const sample = Database[0].id
 
   return (
     <div className="App">
       <Navigation/>
+      <Selector Database={Database}/>
+      <Selector Database={Database}/>
+      <Selector Database={Database}/>
       <Slide adjustSize={adjustSize}/>
       <Container realSize={realSize}>
-        {hello}
+        <h1>{sample}</h1>
       </Container>         
     </div>
   );
