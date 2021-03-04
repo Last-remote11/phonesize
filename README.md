@@ -2,7 +2,7 @@
 
 ## todo :
 
-비동기 문제, 앞뒷면, 이쁜디자인
+비동기 문제, 앞뒷면, 이쁜디자인, 데이터베이스 
 
 # Getting Started with Create React App
 
