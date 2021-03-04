@@ -1,6 +1,7 @@
 import React from 'react';
+import { Database } from './Database'
 
-const Selector = ({ Database }) => {
+const Selector = ({ phoneChange }) => {
 
   const phoneList = Database.map((element, i) => {
     return (
@@ -9,7 +10,8 @@ const Selector = ({ Database }) => {
   })
 
   return (
-    <select onChange={}>
+    <select name='setPhone' id='sp' onChange={phoneChange}>
+      <option value={null}>null</option>
       {phoneList}
     </select>
   );

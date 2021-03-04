@@ -22,7 +22,7 @@ const ContinuousSlider = ({ adjustSize }) => {
   return (  
     <div className={classes.root}>
       <Typography id="continuous-slider" gutterBottom>
-        Size
+        Adjust Size
       </Typography>
       <Grid container spacing={2}>
         <Grid item>
