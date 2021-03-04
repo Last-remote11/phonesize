@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/phonesize/static/css/main.6e27d76e.chunk.css",
+    "main.js": "/phonesize/static/js/main.3d628bbe.chunk.js",
+    "main.js.map": "/phonesize/static/js/main.3d628bbe.chunk.js.map",
+    "runtime-main.js": "/phonesize/static/js/runtime-main.66b189e3.js",
+    "runtime-main.js.map": "/phonesize/static/js/runtime-main.66b189e3.js.map",
+    "static/css/2.150d169a.chunk.css": "/phonesize/static/css/2.150d169a.chunk.css",
+    "static/js/2.563f5ee5.chunk.js": "/phonesize/static/js/2.563f5ee5.chunk.js",
+    "static/js/2.563f5ee5.chunk.js.map": "/phonesize/static/js/2.563f5ee5.chunk.js.map",
+    "static/js/3.5637b55f.chunk.js": "/phonesize/static/js/3.5637b55f.chunk.js",
+    "static/js/3.5637b55f.chunk.js.map": "/phonesize/static/js/3.5637b55f.chunk.js.map",
+    "index.html": "/phonesize/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/phonesize/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.6e27d76e.chunk.css.map": "/phonesize/static/css/main.6e27d76e.chunk.css.map",
+    "static/js/2.563f5ee5.chunk.js.LICENSE.txt": "/phonesize/static/js/2.563f5ee5.chunk.js.LICENSE.txt",
+    "static/media/CreditCard.85b3478d.png": "/phonesize/static/media/CreditCard.85b3478d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66b189e3.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.563f5ee5.chunk.js",
+    "static/css/main.6e27d76e.chunk.css",
+    "static/js/main.3d628bbe.chunk.js"
+  ]
+}
