@@ -1,3 +1,9 @@
+# 스마트폰의 실제 크기를 보여주거나 서로 비교하는 사이트
+
+## todo :
+
+비동기 문제, 앞뒷면, 이쁜디자인
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
