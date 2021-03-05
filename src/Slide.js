@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -12,11 +12,11 @@ const useStyles = makeStyles({
 
 const ContinuousSlider = ({ adjustSize }) => {
   const classes = useStyles();
-  const [value, setValue] = React.useState(50);
+  const [value, setValue] = useState(50);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    adjustSize(value)
+    adjustSize(newValue)
   };
 
   return (  

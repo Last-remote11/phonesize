@@ -5,7 +5,6 @@ function Container({ realSize, children }) {
   return (
     <div className='center'>
       {children}
-      {realSize}
     </div>
   );
 }
