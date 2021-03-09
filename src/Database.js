@@ -1,5 +1,11 @@
 export const Database = [
-
+   {
+      id: 'null',
+      frontImg: '',
+      backImage: '',
+      width: 10,
+      height: 10
+   },
   { 
     id: 'AIP11PM',
     frontImg: 'https://i.postimg.cc/SNr7pBp8/AIP20PM.png',

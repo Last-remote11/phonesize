@@ -11,7 +11,6 @@ const Selector = ({ phoneChange }) => {
 
   return (
     <select name='setPhone' id='sp' onChange={phoneChange}>
-      <option value={null}>null</option>
       {phoneList}
     </select>
   );
