@@ -5,6 +5,7 @@ import Slide from './Slide'
 import Container from './Container'
 import Selector from './Selector'
 import PhoneImgs from './PhoneImgs'
+import CheckBox from './CheckBox'
 import { Database } from './Database'
 
 import CreditCard from './imgs/CreditCard.png'
@@ -17,10 +18,16 @@ const App = () => {
 
 
   const [realSize, setRealSize] = useState(50)
+  const [displayCard, setDisplayCard] = useState(true)
 
   const [, updateState] = useState();
   const forceUpdate = useCallback(() => updateState({}), []);
 
+  const switchCard = () => {
+    displayCard
+    ? setDisplayCard(false)
+    : setDisplayCard(true)
+  }
 
 
   const phoneChange = (n) => (event) => {
@@ -47,10 +54,16 @@ const App = () => {
       <Selector Database={Database} phoneChange={phoneChange(0)}/>
       <Selector Database={Database} phoneChange={phoneChange(1)}/>
       <Selector Database={Database} phoneChange={phoneChange(2)}/>
+      <CheckBox switchCard={switchCard}/>
       
       <Slide adjustSize={setRealSize}/>
       <Container realSize={realSize}>
-        <img className='creditCard' alt='fail' src={CreditCard} width={85.6*(realSize/10)} height={53.98*(realSize/10)}></img>
+        {
+        displayCard 
+        ? <img className='creditCard' alt='fail' src={CreditCard} width={85.6*(realSize/10)} height={53.98*(realSize/10)}></img>
+        : <div />
+        }
+        
         <PhoneImgs array={phone1} realSize={realSize}/>
       </Container>         
     </div>
